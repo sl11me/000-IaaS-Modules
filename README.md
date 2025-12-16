@@ -33,6 +33,30 @@ Module EC2 avec les fonctionnalités suivantes:
 - Terraform >= 1.5.0
 - AWS Provider ~> 5.0
 
-## 🔒 Sécurité
+## � Versioning
 
-:)))
+Ce dépôt utilise des **Git Tags** pour versionner chaque module indépendamment.
+
+### Utilisation des modules
+
+Pour utiliser une version spécifique d'un module, utilisez la syntaxe `git::` avec le paramètre `ref` :
+
+**Exemple VPC :**
+```hcl
+module "vpc" {
+  source = "git::https://github.com/sl11me/terraform-aws-vpc//modules/vpc?ref=vpc-v1.0.0"
+  
+  # ... variables ...
+}
+```
+
+**Exemple EC2 :**
+```hcl
+module "ec2" {
+  source = "git::https://github.com/sl11me/terraform-aws-ec2//modules/ec2?ref=ec2-v1.0.0"
+  
+  # ... variables ...
+}
+```
+
+## �🔒 Sécurité
