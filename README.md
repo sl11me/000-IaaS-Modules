@@ -21,9 +21,7 @@ Modules Terraform réutilisables pour Infrastructure as a Service (IaaS)
 Module EC2 avec les fonctionnalités suivantes:
 
 ### Caractéristiques
-- ✅ Validation des types d'instances (t2/t3 uniquement)
 - ✅ Validation du format AMI
-- ✅ Configuration d'IP publique
 - ✅ Support multi-instance avec `for_each`
 - ✅ Tags personnalisables
 - ✅ Outputs: instance_id, public_ip, private_ip
