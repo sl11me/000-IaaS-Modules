@@ -28,55 +28,13 @@ Module EC2 avec les fonctionnalités suivantes:
 - ✅ Tags personnalisables
 - ✅ Outputs: instance_id, public_ip, private_ip
 
-### Utilisation
-
-```hcl
-module "ec2" {
-  source = "./modules/ec2"
-
-  ami_id              = "ami-068c0051b15cdb816"
-  instance_type       = "t3.micro"
-  associate_public_ip = true
-
-  tags = {
-    Name = "my-instance"
-    Env  = "dev"
-  }
-}
 ```
 
 ## 🛠️ Prérequis
 
 - Terraform >= 1.5.0
 - AWS Provider ~> 5.0
-- Credentials AWS configurées
-
-## 📝 Commandes
-
-```bash
-# Initialiser Terraform
-terraform init
-
-# Valider la configuration
-terraform validate
-
-# Voir le plan d'exécution
-terraform plan
-
-# Appliquer les changements
-terraform apply
-
-# Détruire les ressources
-terraform destroy
-```
 
 ## 🔒 Sécurité
 
-⚠️ **IMPORTANT**: Les fichiers suivants sont ignorés par Git car ils contiennent des données sensibles:
-- `*.tfstate` - État Terraform avec IDs et metadata
-- `.terraform/` - Plugins et providers
-- `*.tfvars` - Variables potentiellement sensibles
-
-## 📄 License
-
-MIT
+:)))

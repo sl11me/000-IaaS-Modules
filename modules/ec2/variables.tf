@@ -1,5 +1,5 @@
 variable "instance_type" {
-  description = "Type EC2"
+  description = "EC2 instance type"
   type        = string
 
   validation {
@@ -27,4 +27,15 @@ variable "associate_public_ip" {
 variable "tags" {
   type    = map(string)
   default = {}
+}
+
+variable "subnet_id" {
+  description = "Subnet ID where EC2 will be deployed"
+  type        = string
+}
+
+variable "security_group_ids" {
+  description = "List of security group IDs"
+  type        = list(string)
+  default     = []
 }
